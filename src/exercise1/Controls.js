@@ -16,11 +16,11 @@ function Controls({
           id="delete-id-input"
           type="number"
           value={deleteId}
-          // add an onChange handler that updates deleteId with setDeleteId
+          onChange={(e) => setDeleteId(e.target.value)}
         />
         <button
           className="btn btn-danger"
-          // add an onClick handler that calls onDeleteClick(deleteId)
+          onClick={() => onDeleteClick(deleteId)}
         >
           Delete
         </button>
@@ -29,19 +29,19 @@ function Controls({
       <div className="other-controls">
         <button
           className="btn"
-          // add an onClick handler that calls onSortByGroupClick
+          onClick={() => onSortByGroupClick()}
         >
           Sort by Group
         </button>
         <button
           className="btn"
-          // add an onClick handler that calls onSortByIdClick
+          onClick={() => onSortByIdClick()}
         >
           Sort by ID
         </button>
         <button
           className="btn"
-          // add an onClick handler that calls onViewToggleClick
+          onClick={() => onViewToggleClick()}
         >
           Grid / List View
         </button>
