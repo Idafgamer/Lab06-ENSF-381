@@ -9,7 +9,7 @@ function App() {
   return (
     <main className="app-shell">
       <section className="panel">
-        <h1>ENSF-382 Lab 06</h1>
+        <h1>ENSF-381 Lab 06</h1>
       </section>
 
       <section className="panel">
